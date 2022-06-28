@@ -1,9 +1,7 @@
 import React from "react";
 
 function Footer() {
-  return(
-    //JSX
-  )
+	return <div id="footer">Footer</div>;
 }
 
 export default Footer;

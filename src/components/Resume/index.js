@@ -1,9 +1,7 @@
 import React from "react";
 
 function Resume() {
-  return(
-    //JSX
-  )
+	return <div id="resume">Resume</div>;
 }
 
 export default Resume;

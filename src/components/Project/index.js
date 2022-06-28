@@ -1,9 +1,7 @@
 import React from "react";
 
 function Project() {
-  return(
-    //JSX
-  )
+	return <div id="project">Project</div>;
 }
 
 export default Project;
