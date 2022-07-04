@@ -1,12 +1,28 @@
 import React from "react";
+import Navigation from "../Navigation";
 
-function Header() {
+function Header(props) {
+	const { sections = [], currentSection, setCurrentSection } = props;
+
 	return (
-		<header className="">
-			<h1>
-				<a href="/">Ian Ackerman</a>
-			</h1>
-		</header>
+		<div className="">
+			<header className="">
+				<div className="container">
+					<div className="row">
+						<div className="col-12 col-md-3 text-start">
+							<h1>Ian Ackerman</h1>
+						</div>
+						<nav className="col-12 col-md-6 text-center container">
+							<Navigation
+								sections={sections}
+								currentSection={currentSection}
+								setCurrentSection={setCurrentSection}
+							></Navigation>
+						</nav>
+					</div>
+				</div>
+			</header>
+		</div>
 	);
 }
 
