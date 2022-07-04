@@ -1,22 +1,27 @@
 import React from "react";
 
-function Navigation() {
-  
+function Navigation(props) {
+	const { sections = [], currentSection, setCurrentSection } = props;
+
 	return (
-		<ul>
-			<li>
-				<a href="/">About Me</a>
-			</li>
-			<li>
-				<a href="/">Portfolio</a>
-			</li>
-			<li>
-				<a href="/">Contact</a>
-			</li>
-			<li>
-				<a href="/">Resume</a>
-			</li>
-		</ul>
+		<div className="row">
+			{sections.map((section) => (
+				<li
+					className={`navigation px-1 mt-3 col-3 ${
+						currentSection === section.name && "selectedNav"
+					}`}
+					key={section.name}
+				>
+					<span
+						onClick={() => {
+							setCurrentSection(section.name);
+						}}
+					>
+						{section.name}
+					</span>
+				</li>
+			))}
+		</div>
 	);
 }
 
