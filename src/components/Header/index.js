@@ -9,7 +9,7 @@ function Header(props) {
 			<header className="px-1 py-3">
 				<div className="container">
 					<div className="row">
-						<div className="col-12 col-md-3 text-start">
+						<div className="col-12 col-md-3 text-center">
 							<h1>Ian Ackerman</h1>
 						</div>
 						<nav className="col-12 col-md-6 text-center container">

@@ -34,7 +34,7 @@ function App() {
 				currentSection={currentSection}
 				setCurrentSection={setCurrentSection}
 			></Header>
-			<main className="container">
+			<main className="contentWrapper">
 				{(() => {
 					if (currentSection === "About") {
 						return (
@@ -63,7 +63,7 @@ function App() {
 					}
 				})()}
 			</main>
-			<footer className="footer">
+			<footer className="footerWrapper">
 				<Footer></Footer>
 			</footer>
 		</div>
