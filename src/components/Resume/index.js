@@ -6,7 +6,7 @@ function Resume() {
 			<h2 className="formHeader text-center">Resume</h2>
 			<a
 				className="resumeLink mx-auto"
-				href="../../assets/Ian Ackerman_Resume.pdf"
+				href="https://drive.google.com/file/d/1j3E4uS8kXm14ESnsdF7nnppOXRz7GbB-/view?usp=sharing"
 				download="Ian Ackerman.pdf"
 			>
 				Download My Full Resume
