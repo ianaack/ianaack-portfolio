@@ -5,13 +5,15 @@ function About() {
 	return (
 		<div className="container">
 			<div className="m-2">
-				<img className="portrait" alt="Ian Ackerman" src={image}></img>
+				<img
+					className="portrait my-5 mx-auto d-block"
+					alt="Ian Ackerman"
+					src={image}
+				></img>
 			</div>
 
 			<p className="text-center">
-				Hey, I'm Ian!
-				<br />
-				<br />
+				<h2>Hey, I'm Ian!</h2>
 				I am a Full-stack Web Developer that can leverage a film and television
 				technical background to develop creative and engaging web content. I
 				have earned a certificate in full-stack development from the University

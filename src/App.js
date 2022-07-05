@@ -63,9 +63,7 @@ function App() {
 					}
 				})()}
 			</main>
-			<div>
-				<Footer></Footer>
-			</div>
+					<Footer></Footer>
 		</div>
 	);
 }

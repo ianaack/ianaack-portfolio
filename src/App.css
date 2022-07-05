@@ -16,7 +16,7 @@ html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	border: 1px red solid;
+	/* border: 1px red solid; */
 }
 
 ul {
@@ -41,16 +41,7 @@ body {
 
 /* COMPONENTS STYLING */
 /* APP */
-.contentWrapper {
-	padding-bottom: 2.5rem;
-}
 
-.footerWrapper {
-	position: relative;
-	bottom: 0;
-	width: fit-content;
-	height: 2.5rem;
-}
 
 /* NAVIGATION */
 .navigation {
@@ -85,6 +76,10 @@ body {
 	background-color: var(--secondary-color);
 	display: flex;
 	justify-content: center;
+	position: fixed;
+	padding: 10px;
+	bottom: 0;
+	width: 100%;
 }
 
 .social-media-list li {
