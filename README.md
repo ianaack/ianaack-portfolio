@@ -21,15 +21,19 @@ There is no need for contribution at this time, but have a look at some other pr
 
 ## Deployment
 
-This app is deployed via Github Pages and can be found [here]().
+This app is deployed via Heroku and can be found [here](https://ianaack-portfolio.herokuapp.com/).
 
 Here is a screenshot of the "About Me" page:
+<img width="956" alt="about-me" src="https://user-images.githubusercontent.com/47282257/177434336-28383922-4177-4c3a-a7af-72001a6c032f.png">
 
 Here is a screenshot of the "Portfolio" page:
+<img width="955" alt="my-projects" src="https://user-images.githubusercontent.com/47282257/177434341-46fe35bb-625b-4579-b80a-04fa0d906767.png">
 
 Here is a screenshot of the "Contact Me" page:
+<img width="959" alt="contact-me" src="https://user-images.githubusercontent.com/47282257/177434347-5d68ab31-795d-49af-ada5-f959747d820c.png">
 
 Here is a screenshot of the "Resume" page:
+<img width="956" alt="resume" src="https://user-images.githubusercontent.com/47282257/177434355-a53f518a-8b5b-40d9-bda2-ef2eb05a33ac.png">
 
 ## License
 
