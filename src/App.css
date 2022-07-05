@@ -35,12 +35,12 @@ body {
 	background-color: var(--primary-color);
 }
 
+/* COMPONENTS STYLING */
+/* NAVIGATION */
 .navTitle {
 	font-weight: bolder;
 }
 
-/* COMPONENTS STYLING */
-/* NAVIGATION */
 .navigation {
 	text-decoration: none;
 	color: var(--secondary-color);
@@ -78,12 +78,56 @@ body {
 	font-weight: bolder;
 }
 
+/* PROJECT */
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1;
+}
+
+.projectCard {
+	background: var(--secondary-color);
+	border-radius: 15px;
+	width: calc(33.3333% - 40px);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+	margin: 50px 20px 20px 20px;
+	padding: 10px;
+	text-align: center;
+	color: var(--secondary-color);
+}
+
+.projectImage {
+	width: 500px;
+	height: 500px;
+	border: 1px solid black;
+}
+
+.projectTitle {
+	font-weight: bold;
+	color: var(--primary-color);
+}
+
+.projectLink {
+	display: block;
+	font-size: large;
+	font-weight: bold;
+	border-radius: 5px;
+	padding: 10px;
+	background: var(--secondary-color);
+	color: var(--primary-color);
+}
+
+.projectLink:hover {
+	background: var(--tertiary-color);
+	color: var(--secondary-color);
+}
+
 /* FOOTER */
 .social-media-list {
 	background-color: var(--secondary-color);
 	display: flex;
 	justify-content: center;
-	position: fixed;
+	position: sticky;
 	padding: 10px;
 	bottom: 0;
 	width: 100%;
