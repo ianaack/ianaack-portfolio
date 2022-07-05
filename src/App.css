@@ -40,9 +40,6 @@ body {
 }
 
 /* COMPONENTS STYLING */
-/* APP */
-
-
 /* NAVIGATION */
 .navigation {
 	text-decoration: none;
@@ -62,7 +59,6 @@ body {
 }
 
 /* ABOUT */
-
 .portrait {
 	border: 5px solid var(--secondary-color);
 	border-radius: 12%;
@@ -70,8 +66,19 @@ body {
 	height: auto;
 }
 
-/* FOOTER */
+/* CONTACT */
+.formHeader {
+	color: var(--secondary-color);
+	font-weight: bold;
+}
 
+.submitBtn {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	font-weight: bolder;
+}
+
+/* FOOTER */
 .social-media-list {
 	background-color: var(--secondary-color);
 	display: flex;

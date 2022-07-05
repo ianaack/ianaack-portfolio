@@ -4,7 +4,7 @@ function Navigation(props) {
 	const { sections = [], currentSection, setCurrentSection } = props;
 
 	return (
-		<div className="row">
+		<div className="navbar">
 			{sections.map((section) => (
 				<li
 					className={`navigation px-1 mt-3 col-3 ${
