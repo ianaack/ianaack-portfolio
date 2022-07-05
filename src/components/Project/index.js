@@ -47,30 +47,44 @@ function Project() {
 	];
 
 	return (
-		<div className="projects">
-			{projects.map((project) => {
-				return (
-					<div key={project.name} className="projectCard container">
-						<h2 className="projectTitle">{project.name}</h2>
-						<div className="card text-center">
-							<img
-								className="projectImage mx-auto my-2 d-block"
-								src={project.image}
-								alt={project.name}
-							></img>
-							<div className="card-body">
-								<a href={project.deployedUrl} className="projectLink">
-									Deployed Application
-								</a>
-								<br />
-								<a href={project.githubUrl} className="projectLink">
-									Github Repository
-								</a>
+		<div className="container">
+			<div className="row g-3">
+				{projects.map((project) => {
+					return (
+						<div key={project.name} className="col-12 col-md-6 col-lg-4 mb-3">
+							<div className="card">
+								<img
+									src={project.image}
+									alt={project.name}
+									className="card-img-top"
+								></img>
+								<div className="card-body">
+									<h5 className="card-title text-center projectTitle">
+										{project.name}
+									</h5>
+									<a
+										target="_blank"
+										rel="noreferrer"
+										href={project.deployedUrl}
+										className="card-text projectLink"
+									>
+										Deployed Application
+									</a>
+									<br />
+									<a
+										target="_blank"
+										rel="noreferrer"
+										href={project.githubUrl}
+										className="card-text projectLink"
+									>
+										Github Repository
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-				);
-			})}
+					);
+				})}
+			</div>
 		</div>
 	);
 }

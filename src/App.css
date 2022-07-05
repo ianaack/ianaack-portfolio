@@ -10,13 +10,13 @@
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/* border: 1px red solid; */
 }
 
 ul {
@@ -33,6 +33,8 @@ body {
 	font-size: 1rem;
 	font-family: var(--font-family);
 	background-color: var(--primary-color);
+	padding-top: 10px;
+	padding-bottom: 50px;
 }
 
 /* COMPONENTS STYLING */
@@ -79,47 +81,47 @@ body {
 }
 
 /* PROJECT */
-.projects {
-	display: flex;
-	flex-wrap: wrap;
-	flex: 1;
-}
-
-.projectCard {
-	background: var(--secondary-color);
-	border-radius: 15px;
-	width: calc(33.3333% - 40px);
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-	margin: 50px 20px 20px 20px;
-	padding: 10px;
-	text-align: center;
-	color: var(--secondary-color);
-}
-
-.projectImage {
-	width: 500px;
-	height: 500px;
-	border: 1px solid black;
-}
-
 .projectTitle {
 	font-weight: bold;
-	color: var(--primary-color);
 }
 
 .projectLink {
-	display: block;
-	font-size: large;
-	font-weight: bold;
-	border-radius: 5px;
-	padding: 10px;
-	background: var(--secondary-color);
-	color: var(--primary-color);
+	color: var(--secondary-color);
 }
 
 .projectLink:hover {
-	background: var(--tertiary-color);
+	color: var(--tertiary-color);
+}
+
+/* RESUME */
+.resumeLink {
+	display: block;
+	padding-top: 10px;
+	font-size: large;
+	font-weight: bold;
 	color: var(--secondary-color);
+	width: fit-content;
+}
+
+.resumeLink:hover {
+	color: var(--tertiary-color);
+}
+
+.resumeWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.resumeWrapper h3 {
+	color: var(--tertiary-color);
+}
+
+.resumeWrapper div {
+	padding: 20px 30px;
+	margin-top: 20px;
+	margin-right: 20px;
 }
 
 /* FOOTER */
@@ -127,8 +129,7 @@ body {
 	background-color: var(--secondary-color);
 	display: flex;
 	justify-content: center;
-	position: sticky;
-	padding: 10px;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 }

@@ -1,113 +1,36 @@
-## Acceptance Criteria
-- `GIVEN` a single-page application portfolio for a web developer
+# Ian Ackerman's React Portfolio
 
-- `WHEN` I load the portfolio
-- `THEN` I am presented with a page containing a header, a section for content, and a footer
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-- `WHEN` I view the header
-- `THEN` I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
+## Description
 
-- `WHEN` I view the navigation titles
-- `THEN` I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
+This is an up to date portfolio built using React.
 
-- `WHEN` I click on a navigation title
-- `THEN` I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
+## Contribution
 
-- `WHEN` I load the portfolio the first time
-- `THEN` the About Me title and section are selected by default
+There is no need for contribution at this time, but have a look at some other projects built by me!
 
-- `WHEN` I am presented with the About Me section
-- `THEN` I see a recent photo or avatar of the developer and a short bio about them
+- [Ian Ackerman](https://github.com/ianaack)
 
-- `WHEN` I am presented with the Portfolio section
-- `THEN` I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repository
+## Table of Contents
 
-- `WHEN` I am presented with the Contact section
-- `THEN` I see a contact form with fields for a name, an email address, and a message
+- [Description](Description)
+- [Contribution](Contribution)
+- [Deployment](Deployment)
+- [License](License)
 
-- `WHEN` I move my cursor out of one of the form fields without entering text
-- `THEN` I receive a notification that this field is required
+## Deployment
 
-- `WHEN` I enter text into the email address field
-- `THEN` I receive a notification if I have entered an invalid email address
+This app is deployed via Github Pages and can be found [here]().
 
-- `WHEN` I am presented with the Resume section
-- `THEN` I see a link to a downloadable resume and a list of the developer’s proficiencies
+Here is a screenshot of the "About Me" page:
 
-- `WHEN` I view the footer
-- `THEN` I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
+Here is a screenshot of the "Portfolio" page:
 
-## Getting Started
-The application that you built for this module will help you know where to start when building your portfolio. You’ll use Create React App just as you did with your module project, but you should be aware of a few structural differences in the component hierarchy. Your portfolio should include the following:
+Here is a screenshot of the "Contact Me" page:
 
-A single `Header` component that appears on multiple pages
+Here is a screenshot of the "Resume" page:
 
-A single `Navigation` component within the header that will be used to conditionally render the different sections of your portfolio
+## License
 
-A single `Project` component that will be used multiple times in the Portfolio section
-
-A single `Footer` component that appears on multiple pages
-
-## Projects
-For each project you feature in your portfolio, you should include the following:
-
-An `image` of the deployed application (either a GIF or a screenshot)
-
-The `title` of the project
-
-A `link` to the deployed application
-
-A `link` to the corresponding GitHub repository
-
-## Design
-As with the previous portfolio homework, remember that "good" design is subjective; however, your site should look polished. Here are a few guidelines on what that means:
-
-- Use mobile-first design.
-
-- Choose a color palette so that your site doesn't just look like the default Bootstrap theme or an unstyled HTML site. Look into resources like Coolors (Links to an external site.) or another color scheme generator to help you create something that will stand out.
-
-- Make sure the font size is large enough to read and that the colors don't cause eye strain.
-
-- Consider using animations and React component libraries. Note that this will not affect your grade, but it may impact how potential employers gauge your knowledge.
-
-This Challenge is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-Satisfies all of the preceding acceptance criteria plus the following:
-
-- Application must use React to render content.
-
-- Application has a single `Header` component that appears on multiple pages, with a `Navigation` component within it that’s used to conditionally render `About Me`, `Portfolio`, `Contact`, and `Resume` sections.
-
-- Application has a single `Project` component that’s used multiple times in the `Portfolio` section.
-
-- Application has a single `Footer` component that appears on multiple pages.
-
-- Application must be deployed to GitHub Pages.
-
-### Deployment: 32%
-- Application deployed at live URL.
-
-- Application loads with no errors.
-
-- Application GitHub URL submitted.
-
-- GitHub repository contains application code.
-
-### Application Quality: 15%
-- User experience is intuitive and easy to navigate.
-
-- User interface style is clean and polished.
-
-- Application uses a color scheme other than the default Bootstrap color palette.
-
-### Repository Quality: 13%
-- Repository has a unique name.
-
-- Repository follows best practices for file structure and naming conventions.
-
-- Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-- Repository contains multiple descriptive commit messages.
-
-- Repository contains high-quality README file with description, screenshot, and link to deployed application.
+This project is covered under the MIT License.

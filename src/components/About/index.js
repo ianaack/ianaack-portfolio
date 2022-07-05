@@ -4,6 +4,7 @@ import image from "../../assets/portrait.jpg";
 function About() {
 	return (
 		<div className="container">
+			<h2 className="formHeader text-center">About Me</h2>
 			<div className="m-2">
 				<img
 					className="portrait my-5 mx-auto d-block"
