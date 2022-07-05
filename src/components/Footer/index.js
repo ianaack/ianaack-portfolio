@@ -2,9 +2,8 @@ import React from "react";
 
 function Footer() {
 	return (
-		<div className="footer container">
-			Made with ❤️ by Ian Ackerman
-			<div className="mb-2 social-media-list">
+		<div className="">
+			<div className="social-media-list">
 				<li className="mx-3">
 					<a href="https://github.com/ianaack" className="social-icon">
 						<span className="bi bi-github"></span>

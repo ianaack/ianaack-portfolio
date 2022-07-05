@@ -1,3 +1,4 @@
+/* GLOBAL STYLING */
 :root {
 	--primary-color: #2a2d34;
 	--secondary-color: #5c946e;
@@ -15,7 +16,7 @@ html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-  border: solid 1px red;
+	border: 1px red solid;
 }
 
 ul {
@@ -34,6 +35,24 @@ body {
 	background-color: var(--primary-color);
 }
 
+.navTitle {
+	font-weight: bolder;
+}
+
+/* COMPONENTS STYLING */
+/* APP */
+.contentWrapper {
+	padding-bottom: 2.5rem;
+}
+
+.footerWrapper {
+	position: relative;
+	bottom: 0;
+	width: fit-content;
+	height: 2.5rem;
+}
+
+/* NAVIGATION */
 .navigation {
 	text-decoration: none;
 	color: var(--secondary-color);
@@ -43,23 +62,43 @@ body {
 .navigation:hover {
 	color: var(--tertiary-color);
 	cursor: pointer;
+	transform: translateY(-2px) translateX(2px);
 }
 
-.footer {
+.selectedNav {
+	font-weight: bolder;
+	color: var(--tertiary-color);
+}
+
+/* ABOUT */
+
+.portrait {
+	border: 5px solid var(--secondary-color);
+	border-radius: 12%;
+	width: 25%;
+	height: auto;
+}
+
+/* FOOTER */
+
+.social-media-list {
+	background-color: var(--secondary-color);
 	display: flex;
-	align-items: center;
 	justify-content: center;
 }
 
-.social-media-list {
+.social-media-list li {
+	position: relative;
 	list-style: none;
-	display: flex;
-	max-width: fit-content;
+}
+
+.social-media-list li:hover {
+	transform: translateY(-2px) translateX(2px);
 }
 
 .social-icon {
 	font-size: 30px;
-	color: var(--secondary-color);
+	color: var(--primary-color);
 }
 
 .social-icon:hover {

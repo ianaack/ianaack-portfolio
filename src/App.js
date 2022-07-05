@@ -12,7 +12,7 @@ import Resume from "./components/Resume";
 function App() {
 	const [sections] = useState([
 		{
-			name: "About",
+			name: "About Me",
 		},
 		{
 			name: "Portfolio",
@@ -28,7 +28,7 @@ function App() {
 	const [currentSection, setCurrentSection] = useState(sections[0].name);
 
 	return (
-		<div className="container">
+		<div className="mainContainer">
 			<Header
 				sections={sections}
 				currentSection={currentSection}
@@ -36,7 +36,7 @@ function App() {
 			></Header>
 			<main className="contentWrapper">
 				{(() => {
-					if (currentSection === "About") {
+					if (currentSection === "About Me") {
 						return (
 							<div>
 								<About></About>
@@ -63,9 +63,9 @@ function App() {
 					}
 				})()}
 			</main>
-			<footer className="footerWrapper">
+			<div>
 				<Footer></Footer>
-			</footer>
+			</div>
 		</div>
 	);
 }

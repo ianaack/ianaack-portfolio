@@ -6,13 +6,13 @@ function Header(props) {
 
 	return (
 		<div className="mb-3">
-			<header className="px-1 py-3">
-				<div className="container">
-					<div className="row">
-						<div className="col-12 col-md-3 text-center">
-							<h1>Ian Ackerman</h1>
+			<header className="py-2">
+				<div className="">
+					<div className="container">
+						<div className="text-center">
+							<h1 className="navTitle">Ian Ackerman</h1>
 						</div>
-						<nav className="col-12 col-md-6 text-center container">
+						<nav className="text-center">
 							<Navigation
 								sections={sections}
 								currentSection={currentSection}
