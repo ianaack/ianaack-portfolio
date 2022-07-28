@@ -3,7 +3,7 @@ import projectImage1 from "../../assets/projectImages/budget-tracker.png";
 import projectImage2 from "../../assets/projectImages/dev-tech-blog.png";
 import projectImage3 from "../../assets/projectImages/food-festival.png";
 import projectImage4 from "../../assets/projectImages/food-finder.png";
-import projectImage5 from "../../assets/projectImages/photo-port.png";
+import projectImage5 from "../../assets/projectImages/pet-stuff-plus.png";
 import projectImage6 from "../../assets/projectImages/reimagined-systems.png";
 
 function Project() {
@@ -33,10 +33,10 @@ function Project() {
 			githubUrl: "https://github.com/ianaack/food-finder",
 		},
 		{
-			name: "Photo Portfolio",
+			name: "Pet Stuff Plus!",
 			image: projectImage5,
-			deployedUrl: "https://ianaack.github.io/photo-port/",
-			githubUrl: "https://github.com/ianaack/photo-port",
+			deployedUrl: "https://petstuffplus.herokuapp.com/",
+			githubUrl: "https://github.com/project0301/paws",
 		},
 		{
 			name: "Reimagined Systems",
