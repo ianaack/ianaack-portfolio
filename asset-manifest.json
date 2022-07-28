@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ianaack-portfolio/static/css/main.d6f64baf.css",
+    "main.js": "/ianaack-portfolio/static/js/main.9f81a2eb.js",
+    "static/media/pet-stuff-plus.png": "/ianaack-portfolio/static/media/pet-stuff-plus.3ee25bfb0cef3c692116.png",
+    "static/media/food-finder.png": "/ianaack-portfolio/static/media/food-finder.f4e8e882a2c781ba9c25.png",
+    "static/media/reimagined-systems.png": "/ianaack-portfolio/static/media/reimagined-systems.b62837253a36133d2d65.png",
+    "static/media/food-festival.png": "/ianaack-portfolio/static/media/food-festival.26b94854b43f7341aacc.png",
+    "static/media/budget-tracker.png": "/ianaack-portfolio/static/media/budget-tracker.fb6b07df4fe60b440a82.png",
+    "static/media/portrait.jpg": "/ianaack-portfolio/static/media/portrait.014ac4f14e497071bb95.jpg",
+    "static/media/dev-tech-blog.png": "/ianaack-portfolio/static/media/dev-tech-blog.fddb026ada3a10da2ce5.png",
+    "index.html": "/ianaack-portfolio/index.html",
+    "main.d6f64baf.css.map": "/ianaack-portfolio/static/css/main.d6f64baf.css.map",
+    "main.9f81a2eb.js.map": "/ianaack-portfolio/static/js/main.9f81a2eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6f64baf.css",
+    "static/js/main.9f81a2eb.js"
+  ]
+}
