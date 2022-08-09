@@ -18,6 +18,7 @@ function Resume() {
 						<li>Node.js</li>
 						<li>Express</li>
 						<li>MongoDB</li>
+            <li>GraphQL</li>
 						<li>MySQL</li>
 						<li>NoSQL</li>
 						<li>IndexedDB</li>
@@ -37,15 +38,17 @@ function Resume() {
 						<li>React</li>
 						<li>Bootstrap</li>
 						<li>Tailwind CSS</li>
+            <li>Chakra UI</li>
 						<li>jQuery</li>
 						<li>jQueryUI</li>
 						<li>Handlebars.js</li>
 					</ul>
 				</div>
 				<div>
-					<h3>Development Tool Proficiencies</h3>
+					<h3>Other Proficiencies</h3>
 					<ul>
 						<li>Git</li>
+            <li>REST APIs</li>
 						<li>npm</li>
 						<li>Jest</li>
 						<li>Webpack</li>
