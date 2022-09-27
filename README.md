@@ -21,7 +21,7 @@ There is no need for contribution at this time, but have a look at some other pr
 
 ## Deployment
 
-This app is deployed via Heroku and can be found [here](https://ianaack-portfolio.herokuapp.com/).
+This app is deployed via Github Pages and can be found [here](https://ianaack.github.io/ianaack-portfolio/).
 
 Here is a screenshot of the "About Me" page:
 <img width="956" alt="about-me" src="https://user-images.githubusercontent.com/47282257/177434336-28383922-4177-4c3a-a7af-72001a6c032f.png">
