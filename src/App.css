@@ -27,6 +27,9 @@ a {
 	text-decoration: none;
 	color: var(--secondary-color);
 }
+a:hover {
+	color: var(--tertiary-color);
+}
 
 body {
 	color: var(--secondary-color);
@@ -38,6 +41,91 @@ body {
 }
 
 /* COMPONENTS STYLING */
+/* BUTTONS */
+.btn-xl {
+	padding: 1.25rem 2.5rem;
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 1.125rem;
+	font-weight: 700;
+}
+.btn-primary {
+	background-color: var(--primary-color);
+	border: 0;
+}
+.btn-primary:hover {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+}
+.btn-primary:active {
+	background-color: var(--tertiary-color);
+	color: var(--primary-color);
+}
+
+.btn-secondary {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	border: 0;
+}
+.btn-secondary:hover {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+}
+.btn-secondary:active {
+	background-color: var(--tertiary-color);
+	color: var(--primary-color);
+	border: 0;
+}
+/* HEADER */
+header.masthead {
+	padding-top: 10.5rem;
+	padding-bottom: 6rem;
+	text-align: center;
+	color: var(--primary-color);
+	background-image: url("./assets/header-bg.webp");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover;
+}
+header.masthead .masthead-subheading {
+	font-size: 1.5rem;
+	font-style: italic;
+	line-height: 1.5rem;
+	margin-bottom: 25px;
+	font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.masthead .masthead-heading {
+	font-size: 3.25rem;
+	font-weight: 700;
+	line-height: 3.25rem;
+	margin-bottom: 1rem;
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media (min-width: 768px) {
+	header.masthead {
+		padding-top: 17rem;
+		padding-bottom: 12.5rem;
+	}
+	header.masthead .masthead-subheading {
+		font-size: 2.25rem;
+		font-style: italic;
+		line-height: 2.25rem;
+		margin-bottom: 2rem;
+	}
+	header.masthead .masthead-heading {
+		font-size: 4.5rem;
+		font-weight: 700;
+		line-height: 4.5rem;
+		margin-bottom: 2rem;
+	}
+}
 /* NAVIGATION */
 .navTitle {
 	font-weight: bolder;

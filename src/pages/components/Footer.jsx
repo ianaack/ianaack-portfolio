@@ -2,7 +2,6 @@ import React from "react";
 
 function Footer() {
 	return (
-		<div className="">
 			<div className="social-media-list">
 				<li className="mx-3">
 					<a
@@ -35,7 +34,6 @@ function Footer() {
 					</a>
 				</li>
 			</div>
-		</div>
 	);
 }
 
