@@ -7,7 +7,7 @@ const Navigation = () => {
 		<div className="mx-3">
 			<nav className="navbar navbar-expand-lg">
 				<a className="navbar-brand" href="/">
-					<img src={logo} alt="Ian Ackerman" style={{ height: "100px" }} />
+					<img src={logo} alt="Ian Ackerman" style={{ height: "50px" }} />
 				</a>
 				<button
 					className="navbar-toggler btn btn-secondary"

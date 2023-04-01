@@ -1,13 +1,15 @@
 import React from "react";
-import Project from "./components/Project";
-import Header from "./components/Header";
+import Project from "./components/sub-components/Project";
 
 function Portfolio() {
 	return (
-		<div>
-			<Header />
-			<h2 className="formHeader text-center">My Projects</h2>
-			<div>
+		<div className="page-section" id="portfolio">
+			<div className="container">
+				<div className="text-center">
+					<h2 className="section-heading fw-bolder text-uppercase">
+						My Projects
+					</h2>
+				</div>
 				<Project />
 			</div>
 		</div>

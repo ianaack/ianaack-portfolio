@@ -2,7 +2,7 @@ import React from "react";
 
 function Resume() {
 	return (
-		<div className="resume">
+		<div className="page-section">
 			<h2 className="formHeader text-center">Resume</h2>
 			<a
 				className="resumeLink mx-auto"

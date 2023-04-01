@@ -2,7 +2,7 @@
 :root {
 	--primary-color: #2a2d34;
 	--secondary-color: #5c946e;
-	--tertiary-color: #30c5ff;
+	--tertiary-color: #8fbc8f;
 	--font-family: Arial, Helvetica, sans-serif;
 	--line-height: 1.4;
 	--transition: 0.25s;
@@ -41,6 +41,33 @@ body {
 }
 
 /* COMPONENTS STYLING */
+/* CUSTOM PAGE SECTIONS */
+.page-section {
+	padding: 4rem 0;
+}
+.page-section h2.section-heading,
+.page-section .section-heading.h2 {
+	font-size: 2.5rem;
+	margin: 1rem;
+	color: #fff;
+}
+.page-section h3.section-subheading,
+.page-section .section-subheading.h3 {
+	font-size: 1rem;
+	font-weight: 400;
+	font-style: italic;
+	font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+	section {
+		padding: 9rem 0;
+	}
+}
+
 /* BUTTONS */
 .btn-xl {
 	padding: 1.25rem 2.5rem;
@@ -69,14 +96,15 @@ body {
 	border: 0;
 }
 .btn-secondary:hover {
-	background-color: var(--primary-color);
-	color: var(--secondary-color);
+	background-color: var(--tertiary-color);
+	color: var(--primary-color);
 }
 .btn-secondary:active {
 	background-color: var(--tertiary-color);
 	color: var(--primary-color);
 	border: 0;
 }
+
 /* HEADER */
 header.masthead {
 	padding-top: 10.5rem;
@@ -126,6 +154,7 @@ header.masthead .masthead-heading {
 		margin-bottom: 2rem;
 	}
 }
+
 /* NAVIGATION */
 .navTitle {
 	font-weight: bolder;
@@ -136,53 +165,136 @@ header.masthead .masthead-heading {
 	color: var(--secondary-color);
 	list-style: none;
 }
-
 .navigation:hover {
 	color: var(--tertiary-color);
 	cursor: pointer;
 	transform: translateY(-2px) translateX(2px);
 }
-
 .selectedNav {
 	font-weight: bolder;
 	color: var(--tertiary-color);
 }
 
 /* ABOUT */
-.portrait {
-	border: 5px solid var(--secondary-color);
-	border-radius: 12%;
-	width: 25%;
-	height: auto;
+/* section#about {
+
+} */
+section#about .portrait {
+	border: 5px solid var(--tertiary-color);
+	border-radius: 100rem;
+	width: 50%;
 }
 
 /* CONTACT */
-.emailLink {
-	color: var(--secondary-color);
+section#contact {
+	background-color: #212529;
+	background-image: url("../src/assets/contact-bg.webp");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
-
-.emailLink:hover {
-	color: var(--tertiary-color);
-	cursor: pointer;
+section#contact .section-heading {
+	color: #fff;
+	margin: 1rem;
+}
+section#contact form#contactForm .form-group {
+	margin-bottom: 1.5rem;
+}
+section#contact form#contactForm .form-group input,
+section#contact form#contactForm .form-group textarea {
+	padding: 1.25rem;
+}
+section#contact form#contactForm .form-group input.form-control {
+	height: auto;
+}
+section#contact form#contactForm .form-group-textarea {
+	height: 100%;
+}
+section#contact form#contactForm .form-group-textarea textarea {
+	height: 100%;
+	min-height: 10rem;
+}
+section#contact form#contactForm p.help-block {
+	margin: 0;
+}
+section#contact form#contactForm .form-control:focus {
+	border: 1px solid var(--tertiary-color);
+	box-shadow: none;
+}
+section#contact form#contactForm ::-webkit-input-placeholder {
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-weight: 700;
+	color: #ced4da;
+}
+section#contact form#contactForm :-moz-placeholder {
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-weight: 700;
+	color: #ced4da;
+}
+section#contact form#contactForm ::-moz-placeholder {
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-weight: 700;
+	color: #ced4da;
+}
+section#contact form#contactForm :-ms-input-placeholder {
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-weight: 700;
+	color: #ced4da;
 }
 
 /* PROJECT */
-.projectTitle {
+#project .project-item {
+	max-width: 26rem;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid var(--secondary-color);
+}
+#project .project-item .project-caption {
+	padding: 1.5rem;
+	text-align: center;
+	background-color: #fff;
+}
+#project .project-item .project-caption .project-caption-heading {
+	font-size: 1.5rem;
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-weight: 700;
+	margin-bottom: 0;
+}
+#project .project-item .project-caption .project-caption-subheading {
+	color: var(--secondary-color);
+	font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#project
+	.project-item
+	.project-caption
+	.project-caption-subheading
+	.project-caption-link {
 	color: var(--primary-color);
-	font-weight: bold;
+	font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-.projectTechTitle {
-	font-weight: bold;
-}
-
-.projectLink {
+#project
+	.project-item
+	.project-caption
+	.project-caption-subheading
+	.project-caption-link:hover {
 	color: var(--tertiary-color);
-	font-weight: bold;
-}
-
-.projectLink:hover {
-	color: var(--primary-color);
+	font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /* RESUME */

@@ -16,6 +16,7 @@ import Navigation from "./pages/components/Navigation";
 
 // import styling
 import "./App.css";
+import Homepage from "./pages/HomePage";
 
 function App() {
 	return (
@@ -24,7 +25,7 @@ function App() {
 				<Analytics />
 				<Navigation />
 				<Routes>
-					<Route path="/" element={<Portfolio />} />
+					<Route path="/" element={<Homepage />} />
 					<Route path="/about-me" element={<About />} />
 					<Route path="/contact-me" element={<Contact />} />
 					<Route path="/projects" element={<Portfolio />} />

@@ -53,15 +53,17 @@ const ContactForm = () => {
 	};
 
 	return (
-		<>
-			<div className="container" id="contact">
+		<section className="page-section" id="contact">
+			<div className="container">
 				<div className="text-center">
-					<h2 className="section-heading text-uppercase">Contact Us</h2>
+					<h2 className="section-heading text-uppercase fw-bolder">
+						Contact Me
+					</h2>
 				</div>
 			</div>
 			<form
 				id="contactForm"
-				// action="https://submit-form.com/4rAYtMaX"
+				action="https://submit-form.com/a1oDL0CV"
 				method="POST"
 			>
 				<div className="row justify-content-center mb-5">
@@ -128,7 +130,7 @@ const ContactForm = () => {
 								className="form-control"
 								type="textarea"
 								id="message"
-								placeholder="Message *"
+								placeholder="How can I help you?"
 								required
 							/>
 						</div>
@@ -138,7 +140,7 @@ const ContactForm = () => {
 				{/* Submit Button */}
 				<div className="text-center">
 					<button
-						className="btn btn-primary btn-xl text-uppercase"
+						className="btn btn-secondary btn-xl text-uppercase"
 						id="submitButton"
 						type="submit"
 						onClick={handleFormSubmit}
@@ -150,7 +152,7 @@ const ContactForm = () => {
 					</button>
 				</div>
 			</form>
-		</>
+		</section>
 	);
 };
 
