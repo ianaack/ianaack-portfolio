@@ -11,52 +11,110 @@ const projects = [
 	{
 		name: "T&B Automotive",
 		image: projectImage7,
-		description: "",
+		description: "A local auto repair shop.",
 		deployedUrl: "https://tandbauto.ca",
 		githubUrl: "https://github.com/ianaack/tbauto",
+		technologies: ["React", "Bootstrap", "JavaScript", "JSX", "CSS"],
 	},
 	{
 		name: "Pet Stuff Plus!",
 		image: projectImage5,
-		description: "",
+		description: "An e-commerce site for pet owners.",
 		deployedUrl: "https://petstuffplus.herokuapp.com/",
 		githubUrl: "https://github.com/project0301/paws",
+		technologies: [
+			"React",
+			"Chakra UI",
+			"Apollo Client",
+			"GraphQL",
+			"JSON Web Token",
+			"JWT-decode",
+			"MongoDB",
+			"Mongoose",
+			"Express.js",
+			"Node.js",
+			"bcrypt",
+			"JavaScript",
+			"HTML",
+			"CSS",
+		],
 	},
 	{
 		name: "Food Finder",
 		image: projectImage4,
-		description: "",
+		description: "Find somewhere to eat within walking distance.",
 		deployedUrl: "https://ianaack.github.io/food-finder/",
 		githubUrl: "https://github.com/ianaack/food-finder",
+		technologies: [
+			"Yelp Fusion API",
+			"Google Geocoding API",
+			"Google Directions API",
+			"JavaScript",
+			"HTML",
+			"Tailwind CSS",
+		],
 	},
-
 	{
 		name: "Reimagined Systems",
 		image: projectImage6,
-		description: "",
+		description: "An inventory management system for a pizza shop.",
 		deployedUrl: "https://reimagined-system.herokuapp.com/",
 		githubUrl: "https://github.com/ianaack/reimagined-system",
+		technologies: [
+			"MongoDB",
+			"Express.js",
+			"Node.js",
+			"MySQL",
+			"Sequelize ORM",
+			"bcrypt",
+			"chart.js",
+			"JavaScript",
+			"HTML",
+			"Tailwind CSS",
+		],
 	},
 	{
 		name: "Budget Tracker",
 		image: projectImage1,
-		description: "",
+		description: "A PWA budget app for personal use.",
 		deployedUrl: "https://ianaack-budget-tracker.herokuapp.com/",
 		githubUrl: "https://github.com/ianaack/budget-tracker",
+		technologies: [
+			"MongoDB",
+			"Mongoose",
+			"Express.js",
+			"Node.js",
+			"PWA",
+			"JavaScript",
+			"HTML",
+			"Tailwind CSS",
+		],
 	},
 	{
 		name: "Dev Tech Blog",
 		image: projectImage2,
-		description: "",
+		description: "A Message board for tech discussions.",
 		deployedUrl: "https://dev-tech-blog-ianaack.herokuapp.com/",
 		githubUrl: "https://github.com/ianaack/dev-tech-blog",
+		technologies: [
+			"MySQL",
+			"Sequelize ORM",
+			"Express.js",
+			"Node.js",
+			"dotenv",
+			"bcrypt",
+			"JavaScript",
+			"Handlebars.js",
+		],
 	},
 	{
 		name: "README Generator",
 		image: projectImage3,
-		description: "",
+		description:
+			"A Node.js CLI application designed for developers to create a professional README.md based on a few prompts.",
 		deployedUrl: "https://github.com/ianaack/pro-readme-generator",
 		githubUrl: "https://github.com/ianaack/pro-readme-generator",
+		technologies: ["Node.js", "File System", "Inquirer", "JavaScript"],
 	},
 ];
 
@@ -64,7 +122,7 @@ function Project() {
 	const projectCards = [];
 
 	for (let i = 0; i < projects.length; i++) {
-		const { name, image, deployedUrl, githubUrl } = projects[i];
+		const { name, image, description, deployedUrl, githubUrl } = projects[i];
 
 		const card = (
 			<div className="col-lg-3 col-md-6 col-sm-12 my-2" key={name}>
@@ -72,6 +130,9 @@ function Project() {
 					<img className="card-img-top" src={image} alt={name} />
 					<div className="card-body">
 						<h5 className="card-title fw-bold text-center">{name}</h5>
+						<p className="card-text text-center">{description}</p>
+					</div>
+					<div className="card-body">
 						<div className="text-center">
 							<div className="btn-group">
 								<a href={deployedUrl} className="btn btn-primary">
