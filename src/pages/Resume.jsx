@@ -1,59 +1,66 @@
 import React from "react";
 
+const skills = [
+	{ backend: "Node.js", frontend: "HTML", other: "Git" },
+	{ backend: "Express.js", frontend: "CSS", other: "REST APIs" },
+	{ backend: "MongoDB", frontend: "JavaScript", other: "npm" },
+	{ backend: "GraphQL", frontend: "React", other: "Jest" },
+	{ backend: "MySQL", frontend: "Bootstrap", other: "Webpack" },
+	{
+		backend: "NoSQL",
+		frontend: "TailwindCSS",
+		other: "Object-Oriented Programming (OOP)",
+	},
+	{
+		backend: "IndexedDB",
+		frontend: "ChakraUI",
+		other: "Model-View-Controller (MVC)",
+	},
+	{
+		backend: "LocalStorage",
+		frontend: "jQuery",
+		other: "Object-Relational Mapping (ORM)",
+	},
+	{
+		backend: "",
+		frontend: "jQueryUI",
+		other: "Progressive Web Applications (PWA)",
+	},
+	{ backend: "", frontend: "Handlebars.js", other: "" },
+];
+
 function Resume() {
 	return (
-		<div className="page-section">
-			<h2 className="formHeader text-center">Resume</h2>
-			<a
-				className="resumeLink mx-auto"
-				href="https://drive.google.com/file/d/1j3E4uS8kXm14ESnsdF7nnppOXRz7GbB-/view?usp=sharing"
-				download="Ian Ackerman.pdf"
-			>
-				Download My Full Resume
-			</a>
-			<div className="resumeWrapper text-center my-2">
-				<div>
-					<h3>Backend Proficiencies</h3>
-					<ul>
-						<li>Node.js</li>
-						<li>Express</li>
-						<li>MongoDB</li>
-            <li>GraphQL</li>
-						<li>MySQL</li>
-						<li>NoSQL</li>
-						<li>IndexedDB</li>
-						<li>LocalStorage</li>
-						<li>Progressive Web Applications (PWA)</li>
-						<li>Object-Oriented Programming (OOP)</li>
-						<li>Model-View-Controller (MVC)</li>
-						<li>Object-Relational Mapping (ORM)</li>
-					</ul>
+		<div className="page-section" id="resume">
+			<div className="container">
+				<div className="text-center">
+					<h2 className="section-heading text-uppercase fw-bolder">Resume</h2>
+					<a
+						href="https://drive.google.com/file/d/1Z_wi3Kiv220sfQ4uW1NVUL-8v8gsq__E/view?usp=sharing"
+						download="Ian_Ackerman.pdf"
+					>
+						<div className="btn btn-secondary">Download My Full Resume</div>
+					</a>
 				</div>
-				<div>
-					<h3>Frontend Proficiencies</h3>
-					<ul>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-						<li>React</li>
-						<li>Bootstrap</li>
-						<li>Tailwind CSS</li>
-            <li>Chakra UI</li>
-						<li>jQuery</li>
-						<li>jQueryUI</li>
-						<li>Handlebars.js</li>
-					</ul>
-				</div>
-				<div>
-					<h3>Other Proficiencies</h3>
-					<ul>
-						<li>Git</li>
-            <li>REST APIs</li>
-						<li>npm</li>
-						<li>Jest</li>
-						<li>Webpack</li>
-					</ul>
-				</div>
+
+				<table className="text-center mt-5 table table-responsive table-sm table-dark table-striped">
+					<thead>
+						<tr>
+							<th scope="col">Backend Proficiencies</th>
+							<th scope="col">Frontend Proficiencies</th>
+							<th scope="col">Other Proficiencies</th>
+						</tr>
+					</thead>
+					<tbody>
+						{skills.map((skill, i) => (
+							<tr data-index={i}>
+								<td>{skill.backend}</td>
+								<td>{skill.frontend}</td>
+								<td>{skill.other}</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
 			</div>
 		</div>
 	);
