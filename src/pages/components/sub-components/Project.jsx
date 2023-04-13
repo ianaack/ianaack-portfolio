@@ -11,7 +11,7 @@ const projects = [
 	{
 		name: "T&B Automotive",
 		image: projectImage7,
-		description: "A local auto repair shop.",
+		description: "A React webpage built for a local auto repair shop.",
 		deployedUrl: "https://tandbauto.ca",
 		githubUrl: "https://github.com/ianaack/tbauto",
 		technologies: ["React", "Bootstrap", "JavaScript", "JSX", "CSS"],
@@ -20,7 +20,7 @@ const projects = [
 		name: "Pet Stuff Plus!",
 		image: projectImage5,
 		description: "An e-commerce site for pet owners.",
-		deployedUrl: "https://petstuffplus.herokuapp.com/",
+		// deployedUrl: "https://petstuffplus.herokuapp.com/",
 		githubUrl: "https://github.com/project0301/paws",
 		technologies: [
 			"React",
@@ -43,7 +43,7 @@ const projects = [
 		name: "Food Finder",
 		image: projectImage4,
 		description: "Find somewhere to eat within walking distance.",
-		deployedUrl: "https://ianaack.github.io/food-finder/",
+		// deployedUrl: "https://ianaack.github.io/food-finder/",
 		githubUrl: "https://github.com/ianaack/food-finder",
 		technologies: [
 			"Yelp Fusion API",
@@ -58,7 +58,7 @@ const projects = [
 		name: "Reimagined Systems",
 		image: projectImage6,
 		description: "An inventory management system for a pizza shop.",
-		deployedUrl: "https://reimagined-system.herokuapp.com/",
+		// deployedUrl: "https://reimagined-system.herokuapp.com/",
 		githubUrl: "https://github.com/ianaack/reimagined-system",
 		technologies: [
 			"MongoDB",
@@ -77,7 +77,7 @@ const projects = [
 		name: "Budget Tracker",
 		image: projectImage1,
 		description: "A PWA budget app for personal use.",
-		deployedUrl: "https://ianaack-budget-tracker.herokuapp.com/",
+		// deployedUrl: "https://ianaack-budget-tracker.herokuapp.com/",
 		githubUrl: "https://github.com/ianaack/budget-tracker",
 		technologies: [
 			"MongoDB",
@@ -94,7 +94,7 @@ const projects = [
 		name: "Dev Tech Blog",
 		image: projectImage2,
 		description: "A Message board for tech discussions.",
-		deployedUrl: "https://dev-tech-blog-ianaack.herokuapp.com/",
+		// deployedUrl: "https://dev-tech-blog-ianaack.herokuapp.com/",
 		githubUrl: "https://github.com/ianaack/dev-tech-blog",
 		technologies: [
 			"MySQL",
@@ -112,7 +112,7 @@ const projects = [
 		image: projectImage3,
 		description:
 			"A Node.js CLI application designed for developers to create a professional README.md based on a few prompts.",
-		deployedUrl: "https://github.com/ianaack/pro-readme-generator",
+		// deployedUrl: "https://github.com/ianaack/pro-readme-generator",
 		githubUrl: "https://github.com/ianaack/pro-readme-generator",
 		technologies: ["Node.js", "File System", "Inquirer", "JavaScript"],
 	},
@@ -134,13 +134,14 @@ function Project() {
 					</div>
 					<div className="card-body">
 						<div className="text-center">
-							<div className="btn-group">
-								<a href={deployedUrl} className="btn btn-primary">
-									Deployed
-								</a>
-								<br />
+							<div className="d-flex justify-content-center">
+								{deployedUrl ? (
+									<a href={deployedUrl} className="btn btn-primary mx-2">
+										View Deployment
+									</a>
+								) : null}
 								<a href={githubUrl} className="btn btn-secondary">
-									Github
+									View Code
 								</a>
 							</div>
 						</div>
